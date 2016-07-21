@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Responsive Eye Testing Applicatioin using HTML5 canvas API</title>
+
+<meta name="description" content="Responsive Eye Testing Applicatioin using HTML5 canvas API">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<script src="js/script.js" type="text/javascript"></script>
+
+</head>
+<body onload="draw();">
+	<div class="container">
+		<div class="inputContainer">
+			<div class="getValues">
+				<label>Property</label>
+				<select id="propertySelect" onchange="highlightPalette()">
+					<option value="color" selected>Forecolour</option>
+					<option value="background">Backcolour</option>
+				</select>
+			</div>
+			<div class="getValues">
+				<label>No. of Lines</label>
+				<input type="text" name="lines" onchange="generatePane(this.value)">
+			</div>			
+		</div>
+		<div class="outputContainer">
+			<div class="pane">
+				<canvas id="canvaspalette">
+					
+				</canvas>
+			</div>
+			<div class="pane">
+				<div id="generatedCode">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

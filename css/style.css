@@ -1,0 +1,113 @@
+/* Common CSS to be appplied for all ----------- */
+
+.getValues, .pane {
+	float: left;
+    margin: 1%;
+    padding: 1%;
+    width: 46%;
+}
+
+label {
+	display:inline-block;
+	width: 16%;
+}
+
+input, select {
+	display:inline-block;
+	width: 30%;
+}
+
+#canvaspalette {
+	margin: 1%;
+	padding: 1%;	
+}
+
+.pane {
+	float: left;
+    margin: 1%;
+    padding: 1%;
+    width: 46%;
+}
+
+.box {
+	float: left;	
+	display:inline-block;	
+    width: 100%;
+    font-size: 200%;
+    height: 50px;
+	background: rgb(0, 0, 0);
+    color: rgb(0, 200, 0);
+    text-align: center;
+    padding: 3px;
+    border-color: green;
+    text-align: -webkit-center;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen  
+and (max-device-width : 768px) {
+/* Styles */
+	.getValues, .pane {
+		float: left;
+		margin: 1%;
+		padding: 1%;
+		width: 96%;
+	}
+	label {
+		display:inline-block;
+		width: 26%;
+	}
+
+	input, select {
+		display:inline-block;
+		width: 70%;
+	}
+}
+
+/* Tablet (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+	.getValues, .pane {
+		float: left;
+		margin: 1%;
+		padding: 1%;
+		width: 96%;
+	}
+	label {
+		display:inline-block;
+		width: 26%;
+	}
+
+	input, select {
+		display:inline-block;
+		width: 70%;
+	}
+}
+
+/* Tablet (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+	.getValues, .pane {
+		float: left;
+		margin: 1%;
+		padding: 1%;
+		width: 96%;
+	}
+	label {
+		display:inline-block;
+		width: 26%;
+	}
+
+	input, select {
+		display:inline-block;
+		width: 70%;
+	}
+}
